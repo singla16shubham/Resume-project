@@ -1,0 +1,94 @@
+body{
+    margin:0px;
+}
+/* Body-header */
+#body-header{
+    height:65vh;
+    background-image: url(image/macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.7;
+}
+/* Horizontal list */
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    
+    
+}
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-size: 1rem;
+}
+.horizontal-list a{
+    color: white;
+    text-decoration: none;
+    
+    /* To add slight delay when hover */
+}
+.nav-menu li a{
+    transition: color 0.5s;
+    border-bottom: 4;
+}
+.nav-menu li a:hover{
+    color: lavenderblush;
+    text-decoration: underline;
+}
+.text-center{
+    text-align: center;
+}
+/* #my-name{
+    color:white;
+    margin-top:5%;
+    font-size:3vw;
+} */
+/* #social-icon li a img{
+  
+
+} */
+/* #social-icon img{
+    /* color:rgba(230,196,196,0.3); */
+    /* border-radius: 50%; */
+    /* margin:0px;
+    height:15px;
+    padding: 0px 8px 0px 8px;
+}
+#social-icon img:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+    /* color: aqua; */
+    
+    /* #social-icon li a i {
+        padding: 0px 10px 0px 10px;
+        font-size: 1rem;
+        border-radius: 50%;
+    }
+    
+    #social-icon li a i:hover {
+        box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+    } */
+    #name-social-container {
+        margin-top: 20vh;
+        /* For the proper spacing between top list and name */
+    }
+    
+    #my-name {
+        font-size: 3rem;
+        letter-spacing: 0.1rem;
+        color: white;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+    
+    .social-icons li a i {
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 50%;
+    }
+    
+    .social-icons li a i:hover {
+        box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+        /* Horizontal offset Vertical offset blurr spread
+        for the shadow ro be more to right or left use the offsets */
+    }
