@@ -39,35 +39,36 @@ body{
 .text-center{
     text-align: center;
 }
-/* #my-name{
-    color:white;
-    margin-top:5%;
-    font-size:3vw;
-} */
-/* #social-icon li a img{
-  
 
-} */
-/* #social-icon img{
-    /* color:rgba(230,196,196,0.3); */
-    /* border-radius: 50%; */
-    /* margin:0px;
-    height:15px;
-    padding: 0px 8px 0px 8px;
-}
-#social-icon img:hover{
-    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
-    /* color: aqua; */
-    
-    /* #social-icon li a i {
-        padding: 0px 10px 0px 10px;
-        font-size: 1rem;
-        border-radius: 50%;
+    section{
+        width: 100%;
+        display: flex;
+        height: 75vh;
+        flex-direction: column;
+        align-items: center;
     }
-    
-    #social-icon li a i:hover {
-        box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
-    } */
+    section:nth-child(2n)
+    {
+        background-color: white;
+    }
+    section:nth-child(2n+1)
+    {
+        background-color: white;
+    }
+    .section-heading{
+        width: auto;
+        padding: 20px 10px 10px;
+        margin: 10px auto;
+        font-weight: 400;
+    }
+    .section-heading span{
+        font-size: 40px;
+        color:#2857a4;
+        display: inline-block;
+        padding-top: 10px;
+        margin-right: 0.5rem;
+
+    }
     #name-social-container {
         margin-top: 20vh;
         /* For the proper spacing between top list and name */
@@ -92,6 +93,7 @@ body{
         /* Horizontal offset Vertical offset blurr spread
         for the shadow ro be more to right or left use the offsets */
     }
+    /* About section */
     #about{
         height: auto;
         width: 100%;
@@ -117,3 +119,126 @@ body{
         
         
     }
+    /* Skills Section */
+  
+.Skills-display {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Skill-progress {
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+}
+
+.Skill-progress > div {
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.Skill-name span {
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+    
+#portfolio-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.portfolio-image-container {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    background-color: #80808078;
+    color: white;
+}
+
+
+    .mb75{
+        margin-bottom: 75px;
+    }
+    .mb-blue {
+        background-color: #2857a4;
+    }
+    
+    .mb-orange {
+        background-color: #ec4d1c;
+    }
+    
+    .mb-teal {
+        background-color: #0b8176;
+    }
+    
+    .mb-light-purple {
+        background-color: #93738c;
+    }
+    
+    
+    
+    /*Percentage Classes */
+    
+    .eighty-five-percent {
+        height: inherit;
+        width: 85%;
+    }
+    
+    .eighty-percent {
+        height: inherit;
+        width: 80%;
+    }
+    
+    .fifty-percent {
+        height: inherit;
+        width: 50%;
+    }
+
+    /* Percentage Classes */
+    .eighty-five{
+        width: 85%;
+        height: inherit;
+        /* border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem; */
+    }
+    /*  */
