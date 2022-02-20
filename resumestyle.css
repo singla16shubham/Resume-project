@@ -1,127 +1,153 @@
-body{
-    margin:0px;
-}
-/* Body-header */
-#body-header{
-    height:65vh;
-    background-image: url(image/macbook_mouse.jpg);
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    opacity: 0.7;
+    padding-top: 1.2rem;
 }
-/* Horizontal list */
-.horizontal-list{
+
+
+
+/* Horizontal Lists */
+
+.horizontal-list {
     list-style: none;
     padding-left: 0px;
-    
-    
+    margin: 0px;
 }
-.horizontal-list li{
+
+.horizontal-list li {
     display: inline-block;
     margin: 0px 8px 8px 0px;
-    font-size: 1rem;
+    font-weight: 100;
+    font-size: 0.9rem;
 }
-.horizontal-list a{
+
+.horizontal-list li a {
     color: white;
     text-decoration: none;
-    
-    /* To add slight delay when hover */
 }
-.nav-menu li a{
-    transition: color 0.5s;
-    border-bottom: 4;
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
 }
-.nav-menu li a:hover{
-    color: lavenderblush;
-    text-decoration: underline;
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
 
-    section{
-        width: 100%;
-        display: flex;
-        height: 75vh;
-        flex-direction: column;
-        align-items: center;
-    }
-    section:nth-child(2n)
-    {
-        background-color: white;
-    }
-    section:nth-child(2n+1)
-    {
-        background-color: white;
-    }
-    .section-heading{
-        width: auto;
-        padding: 20px 10px 10px;
-        margin: 10px auto;
-        font-weight: 400;
-    }
-    .section-heading span{
-        font-size: 40px;
-        color:#2857a4;
-        display: inline-block;
-        padding-top: 10px;
-        margin-right: 0.5rem;
 
-    }
-    #name-social-container {
-        margin-top: 20vh;
-        /* For the proper spacing between top list and name */
-    }
-    
-    #my-name {
-        font-size: 3rem;
-        letter-spacing: 0.1rem;
-        color: white;
-        font-weight: 700;
-        margin-bottom: 0.5rem;
-    }
-    
-    .social-icons li a i {
-        padding: 10px;
-        font-size: 1rem;
-        border-radius: 50%;
-    }
-    
-    .social-icons li a i:hover {
-        box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
-        /* Horizontal offset Vertical offset blurr spread
-        for the shadow ro be more to right or left use the offsets */
-    }
-    /* About section */
-    #about{
-        height: auto;
-        width: 100%;
-        position: relative;
-        /* to make the image above the background image */
-        
-    }
-    #my-image{
-        height: 12rem;
-        width: 12rem;
-        margin: auto;
-        margin-top: -17vh;
-        border-radius:50%;
-        box-shadow: 0px 0px 6px 4px lightgrey;
-        /* box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3); */
-        
-    }
-    #my-image img{
-        height: 100%;
-        width: 100%;
-        border-radius: 50%;
-        /* border-color: red; */
-        
-        
-    }
-    /* Skills Section */
-  
-.Skills-display {
+
+/* Name and Social Icons*/
+
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons li a i {
+    /*color: red;*/
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+
+
+/*Section Classes*/
+
+section {
+    width: 100%;
+    /*height: 75vh;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+
+
+/*About Section*/
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+
+
+/*Skills Section*/
+
+.skills-display {
     width: 75%;
     padding: 10px;
     margin-bottom: 30px;
@@ -130,7 +156,7 @@ body{
     justify-content: space-evenly;
 }
 
-.Skill-progress {
+.skill-progress {
     width: 11rem;
     height: 2.2rem;
     background-color: lightgrey;
@@ -140,18 +166,22 @@ body{
     overflow: hidden;
 }
 
-.Skill-progress > div {
+.skill-progress > div {
     border-radius: 20px 0px 0px 20px;
     box-shadow: 1px 1px 5px 2px #989882;
 }
 
-.Skill-name span {
+.skill-name span {
     color: white;
     font-size: 1rem;
     margin-left: 10px;
     vertical-align: middle;
 }
-    
+
+
+
+/* Portfolio Section */
+
 #portfolio-container {
     box-sizing: border-box;
     display: flex;
@@ -195,50 +225,136 @@ body{
     color: white;
 }
 
+#contact{
 
-    .mb75{
-        margin-bottom: 75px;
-    }
-    .mb-blue {
-        background-color: #2857a4;
-    }
-    
-    .mb-orange {
-        background-color: #ec4d1c;
-    }
-    
-    .mb-teal {
-        background-color: #0b8176;
-    }
-    
-    .mb-light-purple {
-        background-color: #93738c;
-    }
-    
-    
-    
-    /*Percentage Classes */
-    
-    .eighty-five-percent {
-        height: inherit;
-        width: 85%;
-    }
-    
-    .eighty-percent {
-        height: inherit;
-        width: 80%;
-    }
-    
-    .fifty-percent {
-        height: inherit;
-        width: 50%;
-    }
+    color:white;
+    background-image:linear-gradient(to right,#2857a4,#403066 70%);
+    padding-bottom:40px;
+}
+#contact h1 span{
+    Color:White;
+}
+#contact-form{
+    margin-left:15%;
+}
+#Contact-Container{
+    display:flex;
+    /* width:50%; */
+}
+#contact-form-container{
+    width:50%;
+}
+#contact-form-container input,button{
+    display:block;
+}
+input,textarea{
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid white ;
+    margin-bottom: 50px;
+    width: 90%;
+}
+input::placeholder{
+    font-size:1rem;
+    padding-left: 5px ;
+    padding-bottom: 10px;
+}
+textarea{
+    overflow: hidden;
+}
+textarea::placeholder{
+    font-size: 1rem;
+    padding-left: 5px;
+    padding-bottom: 50px;
+}
+#submit-btn{
+    height: 40px;
+    width: 150px;
+    margin-left: 100px;
+    background: transparent;
+    color: white;
+    border: 3px solid white;
+    font-weight: bold;
+    letter-spacing: 1px;
 
-    /* Percentage Classes */
-    .eighty-five{
-        width: 85%;
-        height: inherit;
-        /* border-top-left-radius: 0.5rem;
-        border-bottom-left-radius: 0.5rem; */
-    }
-    /*  */
+}
+
+#my-details-container{
+/*     display:flex; */
+    width:35%;
+    margin-left:5%;
+}
+#my-details-container h3{
+    font-size:1.2rem;
+    font-weight:550;
+}
+#my-details-container p{
+    font-size:1rem;
+}
+.my-details-info-container{
+    margin-bottom:20px;
+    font-size:1rem;
+}
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+
+
+/* Common Margin Classes */
+
+.mb75px {
+    margin-bottom: 75px;
+}
+.mb50px{
+    margin-bottom:50px;
+}
+
+
+
+/*common color classes */
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+
+}
+
+
+
+/* setting background-color */
+
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+.mb-teal {
+    background-color: #0b8176;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+
+
+
+/*Percentage Classes */
+
+.eighty-five-percent {
+    height: inherit;
+    width: 85%;
+}
+
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.fifty-percent {
+    height: inherit;
+    width: 50%;
+}
