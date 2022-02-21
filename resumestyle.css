@@ -298,7 +298,64 @@ textarea::placeholder{
 .my-details-info-container span {
     margin-left: 0.4rem;
 }
+/* Timeline */
+.timeline{
+    position: relative;
+    /* height: 75%; */
+    width: 75%;
+    border: 2px solid black;
+}
+.timeline-box{
+    position: relative;
+    width: 40%;
+    min-height: 150px;
+    border: 2px solid black;
+    margin: 5px;
+    left: 5%;
+}
+.timeline-box:nth-child(2n)
+{
+    left: 53%;
+}
+.timeline-box:nth-child(2n+1):after{
+    content: '';
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    width: 0.5rem;
+    height: 0.5rem;
+    right: -12%;
+    z-index: 1;
+}
+.timeline-box:nth-child(2n):after{
+    content: '';
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    width: 0.5rem;
+    height: 0.5rem;
+    left: -11%;
+    z-index: 1;
+}
+.divider{
+    position: absolute;
+    height:75%;
+    width: 0;
+    left: 50%;
+    top:10%;
+    /* margin-top: -600px; */
+    border-left: 3px dashed #0096fa6b;
 
+}
+.traveller{
+    top: 30%;
+    transform: rotate(90deg);
+    /* left:50%; */
+    position: sticky;
+    z-index: 2;
+}
 
 
 /* Common Margin Classes */
