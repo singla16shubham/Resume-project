@@ -394,15 +394,28 @@ button:focus {
 }
 .divider{
     position: absolute;
-    height:75%;
+    height:66%;
     width: 0;
     left: 50%;
     top:10%;
+    color:#433E3f;
     /* margin-top: -600px; */
     border-left: 3px dashed #0096fa6b;
 
 }
-
+.divider .traveller{
+    top: 30%;
+    transform: rotate(90deg);
+    /* left:50%; */
+    position: sticky;
+    z-index: 2;
+}
+.divider i {
+    /* transform: rotate(90deg); */
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
 .experience-designation {
     font-size: 1.4rem;
 }
@@ -448,14 +461,8 @@ button:focus {
     }
     
 }
-.traveller{
-    top: 30%;
-    transform: rotate(90deg);
-    /* left:50%; */
-    position: sticky;
-    z-index: 2;
-}
-.traveller-car{
+
+.divider .traveller-car{
     top: 30%;
     /* transform: rotate(90deg); */
     /* left:50%; */
