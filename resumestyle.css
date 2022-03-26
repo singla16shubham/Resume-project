@@ -1,4 +1,8 @@
-
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
 /* Body Header */
 
 #body-header {
@@ -9,6 +13,55 @@
     background-position: center;
     background-attachment: fixed;
     padding-top: 1.2rem;
+}
+
+.bars{
+    color: white;
+    margin: 0;
+    margin-right: 5%;
+    display: none;
+}
+
+.bars i {
+    font-size: 2rem;
+}
+
+.dropdown-list{
+    margin: 0;
+    display: none;
+    background-color: #828470;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+
+.dropdown-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+
+.dropdown-list li{
+    margin: 0.4rem 0px;
+}
+
+.no-list-style{
+    list-style: none;
+}
+
+.no-list-style li {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.no-list-style li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -42,9 +95,6 @@
     border-bottom: 1px solid black;
 }
 
-.text-center {
-    text-align: center;
-}
 
 
 
@@ -83,6 +133,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 section:nth-child(2n) {
@@ -177,163 +228,31 @@ section:nth-child(2n + 1) {
     margin-left: 10px;
     vertical-align: middle;
 }
+/* Experience Section */
 
-
-
-/* Portfolio Section */
-
-#portfolio-container {
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 50px;
-    margin-bottom: 20px;
-    justify-content: space-around;
+.experience-designation {
+    font-size: 1.4rem;
 }
 
-.portfolio-image-container {
-    max-width: 300px;
-    overflow: hidden;
-    margin: 10px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
-.portfolio-image-container img {
-    width: 100%;
-    height: 100%;
-}
-
-.portfolio-details {
-    transition: all 0.5s ease-in-out;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    color: transparent;
-    text-align: center;
-    padding: 10px;
-}
-
-.portfolio-image-container:hover {
-    box-shadow: 0 0 20px #74ADC8;
-}
-
-.portfolio-image-container:hover .portfolio-details {
-    background-color: #80808078;
-    color: white;
-}
-
-
-/* CONTACT */
-
-#contact{
-    background-color: #0abcf9;
-    color:white;
-    background-image:linear-gradient(to right,#2857a4,#403066 70%);
-    padding-bottom:40px;
-}
-#contact h1 span{
-    Color:White;
-}
-#contact-form{
-    margin-left:15%;
-}
-#Contact-Container{
-    display:flex;
-    /* width:50%; */
-}
-#contact-form-container{
-    width:50%;
-}
-#contact-form input,textarea{
-    /* background: transparent;
-    border: none;
-    border-bottom: 3px solid white ;
-    margin-bottom: 50px;
-    width: 90%; */
-    max-width: 90%;
-    margin: 15px;
-    padding: 4px 10px;
-    border: 0px solid transparent;
-    border-bottom: 2px solid white;
-    color: #d9dcdd;
-    background: transparent;
-    width: 90%;
-    line-height: 1.6;
-    font-size: 1.05rem;
-}
-input::placeholder{
-    font-size:1rem;
-    padding-left: 5px ;
-    padding-bottom: 10px;
-}
-textarea{
-    overflow: hidden;
-}
-textarea::placeholder{
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
     font-size: 1rem;
-    padding-left: 5px;
-    padding-bottom: 50px;
-}
-/* #submit-btn{
-    height: 40px;
-    width: 150px;
-    margin-left: 100px;
-    background: transparent;
-    color: white;
-    border: 3px solid white;
-    font-weight: bold;
-    letter-spacing: 1px;
-
-} */
-
-#contact-form button[type="submit"] {
-    background: transparent;
-    font-size: 0.95rem;
-    border: 2px solid white;
-    margin-top: 5%;
-    margin-left: 35%;
-    border-radius: 2px;
-    color: white;
-    font-family: sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.046875em;
-    line-height: 1;
-    padding: 0.8em 0.8em 0.78em;
-    text-transform: uppercase;
-}
-#contact-form button:hover {
-    background: white;
-    color: #13386fe0;
-}
-/* It is to remove the box that appears when we click on email */
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
 }
 
-#my-details-container{
-/*     display:flex; */
-    width:35%;
-    margin-left:5%;
-}
-#my-details-container h3{
-    font-size:1.2rem;
-    font-weight:550;
-}
-#my-details-container p{
-    font-size:1rem;
-}
-.my-details-info-container{
-    margin-bottom:20px;
-    font-size:1rem;
-}
-.my-details-info-container span {
-    margin-left: 0.4rem;
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
 }
 
 
@@ -404,7 +323,7 @@ button:focus {
 
 }
 .divider .traveller{
-    top: 30%;
+    top: 135px;
     transform: rotate(90deg);
     /* left:50%; */
     position: sticky;
@@ -416,51 +335,169 @@ button:focus {
     display: block;
     color: #2857a4;
 }
-.experience-designation {
-    font-size: 1.4rem;
+
+
+/* Portfolio Section */
+
+#portfolio-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
 }
 
-.experience-company-name {
-    margin: 5px 0 0;
-    color: #eb822d;
-    font-weight: 400;
-    font-size: 1.2rem;
+.portfolio-image-container {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
-.experience-duration {
-    color: #9e9b9b;
-    font-weight: 100;
-    color: grey;
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    background-color: #80808078;
+    color: white;
+}
+
+
+/* CONTACT */
+
+#contact{
+    background-color: #0abcf9;
+    color:white;
+    background-image:linear-gradient(to right,#2857a4,#403066 70%);
+    padding-bottom:40px;
+}
+#contact h1 span{
+    Color:White;
+}
+#contact-form{
+    margin-left:15%;
+}
+#Contact-Container{
+    display:flex;
+    /* width:50%; */
+}
+#contact-form-container{
+    width:50%;
+}
+#contact-form input,textarea{
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+input::placeholder{
+    font-size:1rem;
+    padding-left: 5px ;
+    padding-bottom: 10px;
+}
+textarea{
+    overflow: hidden;
+}
+textarea::placeholder{
     font-size: 1rem;
+    padding-left: 5px;
+    padding-bottom: 50px;
 }
 
-.experience-description {
-    font-size: 14px;
-    padding: 2px;
-    color: grey;
-    line-height: 20px;
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
 }
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+/* It is to remove the box that appears when we click on email */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#my-details-container{
+/*     display:flex; */
+    width:35%;
+    margin-left:5%;
+}
+#my-details-container h3{
+    font-size:1.2rem;
+    font-weight:550;
+}
+#my-details-container p{
+    font-size:1rem;
+}
+.my-details-info-container{
+    margin-bottom:20px;
+    font-size:1rem;
+}
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+#contact .social-icons li a i {
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+
+}
+
+
 
 .text-align-justify {
     text-align: justify;
 }
-
-
-/* For the Responsive part */
-@media screen and (max-width:600px) {
-    .divider{
-        left:5%;
-    }
-    .timeline-box{
-        left:11% !important;
-        width: 80%;
-    }
-    .timeline-box::after{
-        left:-10% !important;
-        /* important is implying that finally this rule will be apllied even if other rules are specified for this element */
-    }
-    
+.text-center {
+    text-align: center;
 }
+.text-right{
+    text-align: right;
+}
+
+
+
+
 
 .divider .traveller-car{
     top: 30%;
@@ -535,4 +572,60 @@ button:focus {
 .fifty-percent {
     height: inherit;
     width: 50%;
+}
+/* For the Responsive part */
+
+@media only screen and (max-width:768px) {
+    .divider{
+        left:4.25%;
+    }
+    .timeline-box{
+        left:11% !important;
+        width: 80%;
+    }
+    .timeline-box::after{
+        left:-10% !important;
+        /* important is implying that finally this rule will be apllied even if other rules are specified for this element */
+    }
+    #Contact-Container{
+        /* display: block; */
+        flex-wrap: wrap;
+    }
+        #my-details-container{
+            width:80%;
+            margin-left:10%;
+            margin-top: 10%;
+        }
+        #contact-form{
+           margin-left: 0%;
+        }
+        #contact-form-container{
+            width:80%;
+            margin: 10%;
+        }
+        .social-icons li a i {   
+            padding: 25px;   
+        }
+        #name-social-container {
+            margin-top: 10%;
+        }
+
+}
+@media only screen and (max-width: 572px) {
+    .divider{
+        left:2%;
+    }
+    .timeline-box {
+        width: 100%;
+        left: 10% !important;
+    }
+
+    .bars {
+        display: block;
+    }
+    
+    
+    .nav-menu {
+        display: none;
+    } 
 }
