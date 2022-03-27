@@ -1,29 +1,31 @@
 var btns= document.querySelectorAll('.nav-menu a');
 var currPos=0;
+var scrollInterval;
 for(var i=0;i<btns.length;i++)
 {
     btns[i].addEventListener('click',function(event)
     {
         event.preventDefault();
         var targetSectionId=this.textContent.trim().toLowerCase();
-        console.log(targetSectionId);
+        // console.log(targetSectionId);
         var targetSection=document.getElementById(targetSectionId);
-        // console.log(targetSection);
-        var scrollInterval=setInterval(function(){
-                    // var elem=document.getElementById("Exp");
-                
-                    var targetPos=targetSection.offsetTop;
-                    // alert(targetPos);
-                    if(currPos>=targetPos)
-                    {
-                        clearInterval(scrollInterval);
-                        currPos=0;
-                        return;
-                    }
-                    currPos+=50;
-                    window.scrollBy(0,50);
-                },50);
+        
+         scrollInterval=setInterval(scrollWindow,50,targetSection);
     })
+}
+function scrollWindow(targetSection){
+                    
+                
+    var targetPos=targetSection.offsetTop;
+    // alert(targetPos);
+    if(currPos>=targetPos)
+    {
+        clearInterval(scrollInterval);
+        currPos=0;
+        return;
+    }
+    currPos+=50;
+    window.scrollBy(0,50);
 }
 
 // var currPos=0;
