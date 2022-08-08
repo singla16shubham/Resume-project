@@ -10,7 +10,7 @@ for(var i=0;i<btns.length;i++)
         // console.log(targetSectionId);
         var targetSection=document.getElementById(targetSectionId);
         
-         scrollInterval=setInterval(scrollWindow,50,targetSection);
+         scrollInterval=setInterval(scrollWindow,25,targetSection);
     })
 }
 function scrollWindow(targetSection){

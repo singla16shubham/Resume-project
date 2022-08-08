@@ -372,6 +372,10 @@ section:nth-child(2n + 1) {
     text-align: center;
     padding: 10px;
 }
+.portfolio-details p{
+    font-size: 20px;
+    
+}
 
 .portfolio-image-container:hover {
     box-shadow: 0 0 20px #74ADC8;
